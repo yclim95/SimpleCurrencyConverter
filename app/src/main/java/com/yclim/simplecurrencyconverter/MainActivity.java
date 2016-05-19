@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         Double poundAmount = dollarAmount * 4.09;
 
-        String result = String.format(Locale.getDefault(), "%.2f", poundAmount);
+        String result = String.format(Locale.getDefault(), "%.2f", poundAmount); //Locale.getDefault() to get the device user's current setting
 
         Toast.makeText(this, "RM" + result, Toast.LENGTH_LONG).show();
     }
